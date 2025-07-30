@@ -1,0 +1,14 @@
+@use 'reset.scss';
+@use 'fonts.scss';
+@use 'keyframes.scss';
+
+html {
+	font-family: 'TT Norms Pro', -apple-system;
+}
+
+.mb-1-25 {
+	margin-bottom: 1.25rem;
+	@media (max-width: 1024px) {
+		margin-bottom: 0.9375rem;
+	}
+}

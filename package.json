@@ -1,0 +1,28 @@
+{
+  "name": "nuxt-app",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "build": "nuxt build",
+    "dev": "nuxt dev",
+    "generate": "nuxt generate",
+    "preview": "nuxt preview",
+    "postinstall": "nuxt prepare"
+  },
+  "dependencies": {
+    "@pinia/nuxt": "^0.11.2",
+    "@solana/wallet-adapter-base": "^0.9.27",
+    "@solana/wallet-adapter-phantom": "^0.9.28",
+    "@solana/web3.js": "^1.98.2",
+    "@types/better-sqlite3": "^7.6.13",
+    "better-sqlite3": "^12.2.0",
+    "nuxt": "^4.0.1",
+    "pinia": "^3.0.3",
+    "swiper": "^11.2.10",
+    "vue": "^3.5.17",
+    "vue-router": "^4.5.1"
+  },
+  "devDependencies": {
+    "sass": "^1.89.2"
+  }
+}
