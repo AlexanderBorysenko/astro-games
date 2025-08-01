@@ -112,6 +112,7 @@ useHead({
 
 	&__item {
 		display: flex;
+		flex-wrap: wrap;
 		align-items: center;
 		text-align: left;
 		padding: 0.625rem 0.9375rem;
