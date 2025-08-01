@@ -49,7 +49,7 @@
 				<div class="home-slider__content">
 					<h2 class="home-slider__title">Discover the future</h2>
 					<p class="home-slider__description">
-						Unveil the next era of gaming with AstroGame, where
+						Unveil the next era of gaming with AstroGames, where
 						innovation meets rewards.
 					</p>
 					<p class="home-slider__description">

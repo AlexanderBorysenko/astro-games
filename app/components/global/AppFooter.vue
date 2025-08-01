@@ -1,6 +1,6 @@
 <template>
 	<div class="app-footer">
-		<p class="app-footer__logo">AstroGame</p>
+		<p class="app-footer__logo">AstroGames</p>
 		<ul class="app-footer__menu">
 			<li
 				class="app-footer__menu-item"
