@@ -2,7 +2,7 @@
 	<div class="astro-points-count">
 		<span class="astro-points-count__label">Astro Points</span>
 		<span class="astro-points-count__count">
-			{{ displayPoints }}
+			{{ formatPoints(user?.points_count || 0) }}
 			<SvgIcon name="point" class="astro-points-count__icon" />
 		</span>
 	</div>
@@ -11,13 +11,7 @@
 <script lang="ts" setup>
 const userStore = useUserStore();
 const { user, isLoggedIn } = storeToRefs(userStore);
-
-const displayPoints = computed(() => {
-	if (!isLoggedIn.value || !user.value) {
-		return 0;
-	}
-	return user.value.points_count || 0;
-});
+const { formatPoints } = usePointsFormatter();
 </script>
 
 <style scoped lang="scss">

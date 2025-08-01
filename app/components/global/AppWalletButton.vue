@@ -70,6 +70,10 @@ const handleClick = () => {
 	&__icon {
 		width: 2.125rem;
 		height: 2.125rem;
+		@media (max-width: 1024px) {
+			width: 1.25rem;
+			height: 1.25rem;
+		}
 	}
 
 	&:hover:not(:disabled) {

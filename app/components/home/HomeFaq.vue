@@ -35,8 +35,15 @@
 						/>
 					</svg>
 				</div>
-				<div v-if="faqOpenedItemIndex === index" class="faq__answer">
-					{{ item.answer }}
+				<div
+					class="faq__answer"
+					:class="{
+						expanded: faqOpenedItemIndex === index
+					}"
+				>
+					<div class="faq__answer-inner">
+						{{ item.answer }}
+					</div>
 				</div>
 			</div>
 		</div>
@@ -156,7 +163,6 @@ const faqItems = [
 	}
 
 	&__answer {
-		padding: 0.9375rem 1.5625rem;
 		font-family: 'TT Norms Pro';
 		font-weight: 400;
 		font-size: 1rem;
@@ -165,10 +171,22 @@ const faqItems = [
 		background-color: #ffffff;
 		border-radius: 0 0 0.9375rem 0.9375rem;
 		margin-top: -0.0625rem; /* To align with question border */
+
+		overflow: auto;
+		height: 0;
+		transition: height 0.3s ease;
+		&.expanded {
+			height: 5rem; /* Adjust height as needed */
+		}
+		&-inner {
+			padding: 0.9375rem 1.5625rem;
+			@media (max-width: 1024px) {
+				padding: 0.9375rem;
+			}
+		}
 		@media (max-width: 1024px) {
 			font-size: 0.75rem;
 			line-height: 0.9375rem;
-			padding: 0.9375rem;
 		}
 	}
 }

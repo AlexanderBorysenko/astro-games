@@ -221,6 +221,9 @@
 		height: 6.1087rem;
 		left: 32.5rem;
 		top: -4.375rem;
+		@media (max-width: 1024px) {
+			display: none;
+		}
 	}
 }
 </style>

@@ -227,8 +227,16 @@ const { elementRef: fireDecorationRef } = fireAnimation;
 		position: absolute;
 		bottom: -7rem;
 		right: -7rem;
+		width: 11.875rem;
+		height: 11.875rem;
 		transform-origin: top left;
 		transition: none; // Disable transitions for instant changes
+		@media (max-width: 1024px) {
+			width: 6.25rem;
+			height: 6.25rem;
+			bottom: -3.5rem;
+			right: -3.5rem;
+		}
 	}
 
 	// Custom pagination styles
@@ -385,7 +393,7 @@ const { elementRef: fireDecorationRef } = fireAnimation;
 				width: 4.155rem;
 				height: 6.0725rem;
 				left: 7.6875rem;
-				top: -1.1875rem;
+				top: 1.1875rem;
 
 				filter: drop-shadow(
 					0.2887rem 0.7057rem 0.6256rem rgba(0, 0, 0, 0.26)
@@ -407,6 +415,18 @@ const { elementRef: fireDecorationRef } = fireAnimation;
 
 			img {
 				animation: plane-horizontal-move 10s ease infinite alternate;
+			}
+			@media (max-width: 1024px) {
+				position: absolute;
+				width: 1.4363rem;
+				height: 2.0987rem;
+				left: 2rem;
+				top: 8.1875rem;
+
+				filter: drop-shadow(
+					0.2065rem 0.5047rem 0.4474rem rgba(0, 0, 0, 0.26)
+				);
+				transform: rotate(-45deg);
 			}
 		}
 	}

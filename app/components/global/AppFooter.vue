@@ -7,7 +7,11 @@
 				v-for="item in menuItems"
 				:key="item.name"
 			>
-				<NuxtLink :to="item.path">
+				<NuxtLink
+					:to="item.path"
+					:target="item.target || '_self'"
+					class="app-footer__menu-link"
+				>
 					{{ item.name }}
 				</NuxtLink>
 			</li>
@@ -42,9 +46,8 @@ import { NuxtLink } from '#components';
 import { TELEGRAM_LINK, X_LINK } from '~/constants';
 
 const menuItems = [
-	{ name: '2025 Astro', path: '#' },
-	{ name: 'Contact', path: '/contact' },
-	{ name: 'Terms', path: '/terms' },
+	{ name: '2025 Astro', path: '/' },
+	{ name: 'Contact', path: TELEGRAM_LINK, target: '_blank' },
 	{ name: 'FAQ', path: '/#faq' }
 ];
 </script>

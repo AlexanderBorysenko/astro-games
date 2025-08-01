@@ -21,7 +21,8 @@
 
 		<div class="app-aside__section app-aside__menu">
 			<NuxtLink
-				to="/contact-us"
+				:to="TELEGRAM_LINK"
+				target="_blank"
 				class="app-aside__menu-item"
 				:class="{
 					'app-aside__menu-item--active':
@@ -36,6 +37,7 @@
 </template>
 
 <script lang="ts" setup>
+import { TELEGRAM_LINK } from '~/constants';
 import AppAstroPointsCount from './AppAstroPointsCount.vue';
 
 const menuItems = [

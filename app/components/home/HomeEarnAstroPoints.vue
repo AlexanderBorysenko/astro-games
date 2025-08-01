@@ -5,7 +5,7 @@
 			<p class="earn-astro-points__text">
 				Earn additional Astro Points by completing community tasks
 			</p>
-			<NuxtLink to="/earn" class="earn-astro-points__button">
+			<NuxtLink to="/convert" class="earn-astro-points__button">
 				Earn now
 			</NuxtLink>
 		</div>

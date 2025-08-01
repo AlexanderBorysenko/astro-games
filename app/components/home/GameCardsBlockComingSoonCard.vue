@@ -22,5 +22,10 @@
 	@media (max-width: 1024px) {
 		border-radius: 1.5625rem;
 	}
+	img {
+		@media (max-width: 1024px) {
+			width: 60%;
+		}
+	}
 }
 </style>

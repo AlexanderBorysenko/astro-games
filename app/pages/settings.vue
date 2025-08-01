@@ -20,7 +20,9 @@
 			>
 				Disconnect Wallet
 			</button>
-			<AppWalletButton v-else class="app-wallet-button" />
+			<ClientOnly v-else>
+				<AppWalletButton class="app-wallet-button" />
+			</ClientOnly>
 		</div>
 	</MainLayout>
 </template>
@@ -58,10 +60,10 @@ useHead({
 
 	color: #f1d9bd;
 
-	@media (max-width: 1024) {
+	@media (max-width: 1024px) {
 		flex-direction: column;
 		padding: 1.25rem;
-		gap: 1.875rem;
+		gap: 1rem;
 		border-radius: 1.5625rem;
 	}
 }
@@ -73,6 +75,11 @@ useHead({
 
 	span {
 		margin-left: 2rem;
+	}
+
+	@media (max-width: 1024px) {
+		font-size: 0.875rem;
+		line-height: 1.125rem;
 	}
 }
 
