@@ -1,14 +1,9 @@
 <svg xmlns="http://www.w3.org/2000/svg" style="display: none">
-    <symbol id="social-x" viewBox="0 0 30 30" fill="none" xmlns="http://www.w3.org/2000/svg">
-        <mask id="mask0_3133_6192" style="mask-type:luminance" maskUnits="userSpaceOnUse" x="0" y="0" width="30"
-            height="30">
-            <path d="M0 0H30V30H0V0Z" fill="currentColor" />
-        </mask>
-        <g mask="url(#mask0_3133_6192)">
-            <path
-                d="M23.625 1.40576H28.2257L18.1757 12.9215L30 28.5943H20.7429L13.4871 19.0908L5.19429 28.5943H0.589286L11.3379 16.2729L0 1.4079H9.49286L16.0414 10.0929L23.625 1.40576ZM22.0071 25.8343H24.5571L8.1 4.02219H5.36571L22.0071 25.8343Z"
-                fill="currentColor" />
-        </g>
+    <symbol id="social-x" viewBox="0 0 19 19" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <path
+            d="M14.9625 0.890316H17.8763L11.5113 8.1836L19 18.1097H13.1371L8.54186 12.0908L3.28971 18.1097H0.373214L7.18064 10.3062L0 0.891673H6.01214L10.1596 6.39217L14.9625 0.890316ZM13.9379 16.3617H15.5529L5.13 2.54739H3.39829L13.9379 16.3617Z"
+            fill="currentColor" />
+
     </symbol>
 
     <symbol id="social-telegram" viewBox="0 0 32 28" fill="none" xmlns="http://www.w3.org/2000/svg">
