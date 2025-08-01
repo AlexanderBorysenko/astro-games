@@ -27,7 +27,11 @@
 					class="app-footer__social-icon"
 				/>
 			</a>
-			<NuxtLink to="/tutorial" class="app-footer__social-link _tutorial">
+			<NuxtLink
+				to="https://astrogames.gitbook.io/"
+				target="_blank"
+				class="app-footer__social-link _tutorial"
+			>
 				<img
 					src="~assets/images/tutorial-icon.png"
 					alt=""
